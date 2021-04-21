@@ -12,5 +12,6 @@ public class TiposPrimitivos {
         System.out.println(numeroByte);
         System.out.println("Valor mínimo byte: " + Byte.MIN_VALUE);
         System.out.println("Valor máximo byte: " + Byte.MAX_VALUE);
+        // Test: System.out.println("Tipo: " + numeroByte)
     }
 }
