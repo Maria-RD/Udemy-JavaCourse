@@ -1,3 +1,4 @@
+// Clase EnteroString
 
 public class EnterosString {
     public static void main(String args[]) {
