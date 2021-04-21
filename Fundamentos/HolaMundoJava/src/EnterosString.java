@@ -21,5 +21,15 @@ public class EnterosString {
         //System.out.println(miVariableCadena2);
         //Probando concatenación con soutv
         System.out.println("miVariableCadena2 = " + miVariableCadena2);
+        
+        //Valores permitidos en el nombre de variables
+        var miVariable=1;
+        var _miVariable=2;
+        var $miVariable=3;
+        //var áVariable=4; No se recomienda utilizar
+        //var #miVariable=5; no se permite utilizar caracteres especiales
+        System.out.println("miVariable = " + miVariable);
+        System.out.println("_miVariable = " + _miVariable);
+        System.out.println("$miVariable = " + $miVariable);
     }
 }
