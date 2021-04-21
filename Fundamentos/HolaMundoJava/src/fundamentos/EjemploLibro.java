@@ -1,3 +1,5 @@
+package fundamentos;
+
 // Clase EjemploLibro
 
 import java.util.Scanner;

@@ -1,3 +1,5 @@
+package fundamentos;
+
 // Clase ClaseScanner
 
 import java.util.Scanner;

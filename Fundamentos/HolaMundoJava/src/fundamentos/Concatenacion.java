@@ -1,3 +1,5 @@
+package fundamentos;
+
 // Clase Concatenacion
 
 public class Concatenacion {

@@ -1,3 +1,5 @@
+package fundamentos;
+
 //Mi clase en Java
 
 public class HolaMundo {
