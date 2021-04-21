@@ -12,5 +12,12 @@ public class EnterosString {
         
         miVariableCadena="Adiós";
         System.out.println(miVariableCadena);
+        
+        //var - Inferencia de tipos en Java
+        var miVariableEntera2 = 15;
+        System.out.println(miVariableEntera2);
+        
+        var miVariableCadena2 = "Other";
+        System.out.println(miVariableCadena2);
     }
 }
