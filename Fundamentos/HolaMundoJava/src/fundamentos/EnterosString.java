@@ -1,3 +1,5 @@
+package fundamentos;
+
 // Clase EnteroString
 
 public class EnterosString {

@@ -1,3 +1,5 @@
+package fundamentos;
+
 // Clase CaracteresEspeciales
 
 public class CaracteresEspeciales {
