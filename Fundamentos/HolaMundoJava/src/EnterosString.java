@@ -17,7 +17,9 @@ public class EnterosString {
         var miVariableEntera2 = 15;
         System.out.println(miVariableEntera2);
         
-        var miVariableCadena2 = "Other";
-        System.out.println(miVariableCadena2);
+        var miVariableCadena2 = "Nueva Cadena";
+        //System.out.println(miVariableCadena2);
+        //Probando concatenación con soutv
+        System.out.println("miVariableCadena2 = " + miVariableCadena2);
     }
 }
