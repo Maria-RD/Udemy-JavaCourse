@@ -2,10 +2,10 @@ package fundamentos;
 
 import java.util.Scanner;
 
-public class ConvertirPrimitivos {
+public class ConvertirPrimitivosP1 {
     public static void main(String args[]){
-        // Convertir tipo String a tipo int
-        var edad = Integer.parseInt("20");
+        // Convertir String -> int
+        var edad = Integer.parseInt("20"); // String -> int: Integer.parseInt()
         // var edad = "20";
         System.out.println("edad = " + (edad + 1));
         
