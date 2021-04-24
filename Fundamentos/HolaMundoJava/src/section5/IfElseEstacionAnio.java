@@ -2,10 +2,14 @@ package section5;
 
 import java.util.Scanner;
 
-public class EstacionAnio {
+public class IfElseEstacionAnio {
     public static void main(String args[]){
-        // Ejercicio dinámico - Creando objeto de la clase Scanner
+        
+        // Ejercicio interactivo - Creando objeto de la clase Scanner
         var scanner = new Scanner(System.in);
+        
+        // Ejemplo 2: condición anidada
+        // Buena práctica: anidar todo con if-else, en vez de if's separados
         System.out.println("CÁLCULO ESTACIÓN DEL AÑO - if-else");
         System.out.print("Inserte número del mes: ");
         var mes = Integer.parseInt(scanner.nextLine());

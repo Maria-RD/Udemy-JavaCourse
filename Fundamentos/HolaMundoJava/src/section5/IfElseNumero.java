@@ -2,23 +2,13 @@ package section5;
 
 import java.util.Scanner;
 
-public class SentenciaIfElse {
+public class IfElseNumero {
     public static void main(String args[]){
         
-        // Ejemplos de Sentencia Interactivos - creando objeto Scanner
+        // Ejemplo interactivo - creando objeto de la clase Scanner
         var scanner = new Scanner(System.in);
         
-        // Ejemplo 1: condición simple
-        System.out.println("EJERCICIO DE CONDICIÓN SIMPLE: true O false");
-        System.out.print("Insertar condición (true/false): ");
-        var condicion = Boolean.parseBoolean(scanner.nextLine());
-        if(condicion) { // por defecto evalúa la condicion con " == true"
-            System.out.println("Condición verdadera.");
-        } else {
-            System.out.println("Condición falsa.");
-        }
-        
-        // Ejemplo 2: condición anidada
+        // Ejemplo 1: condición anidada
         // Buena práctica: anidar todo con if-else en vez de if's separados
         System.out.println("EJERCICIO 2: CONDICIONAL IF-ELSE - EVALUAR SI NÚMERO SE ENCUENTRA DEL 1 AL 4");
         System.out.print("Insertar número cualquiera: ");
