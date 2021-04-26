@@ -11,21 +11,21 @@ public class Arithmetic {
     
     // 2.1 metodo sin retorno (void)
     public void sumWithoutReturn() {
-        int result = a + b;
+        int result = this.a + this.b;
         System.out.println("result = " + result); // solo imprime el resultado, pero no se puede manipular en otra clase
     }
     
     // 2.2 metodo con retorno (return) - retorna un entero (int)
     public int sumWithReturn() {
-        return a + b; // con return, este resultado si se puede manipular en otra clase
+        return this.a + this.b; // con return, este resultado si se puede manipular en otra clase
     }
     
     // 2.3 Signature: definicion de metodo
     // tiene modificador acceso, tipo de retorno, nombre del method y los argumentos que recibe
-    public int sumWithArguments(int arg1, int arg2) {
-        a = arg1; // con esto, pasa de dejar el valor asignado en la clase donde se crea el objeto
-        b = arg2; // a tomar los valores de los parámetros que se le pasaron al método
+    public int sumWithArguments(int a, int b) {
+        this.a = a; // this hace referencia a que es un atributo de la clase, no es una variable aislada
+        this.b = b; // a esos atributos (this.a y this.b) se les asignan los valores de los p/metros que recibieron
         //return a + b;
-        return sumWithReturn();
+        return this.sumWithReturn();
     }
 }
