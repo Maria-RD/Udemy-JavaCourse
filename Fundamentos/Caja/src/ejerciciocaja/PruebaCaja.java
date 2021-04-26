@@ -21,7 +21,7 @@ public class PruebaCaja {
         caja1.profundo = Integer.parseInt(scanner.nextLine());
         
         // 2.2. pasando parametros al metodo calcularVolumen()
-        int volumen1 = caja1.calcularVolumen(caja1.ancho, caja1.alto, caja1.profundo);
+        int volumen1 = caja1.calcularVolumen();
         System.out.println("Volumen de la caja = " + volumen1);
 
         // 3. creando objeto con valores por default - constructor con argumentos
@@ -32,7 +32,7 @@ public class PruebaCaja {
         System.out.println("LABORATORIO - PROYECTO CAJA (CONSTRUCTOR CON PARAMETROS 3*2*6)");
         
         // 3.2. pasando parametros definidos en el constructor a calcularVolumen()
-        int volumen2 = caja2.calcularVolumen(caja2.alto, caja2.ancho, caja2.profundo);
+        int volumen2 = caja2.calcularVolumen();
         System.out.println("Volumen de la caja = " + volumen2);
     }
 }
