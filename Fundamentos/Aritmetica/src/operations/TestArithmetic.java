@@ -1,7 +1,13 @@
 package operations;
 
 public class TestArithmetic {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+        
+        // Variables locales al method main()
+        int a = 10;
+        int b = 2;
+        miMetodo();
+        
         // Buenas practicas: se crea objeto de la clase Arithmetic
         Arithmetic arithmetic1 = new Arithmetic(10, 7);
         System.out.println("arithmetic.a = " + arithmetic1.a);
@@ -26,5 +32,15 @@ public class TestArithmetic {
         // int result2 = arithmethic1.sumWithArguments(arithmetic.a, arithmetic.b);
         int result2 = arithmetic1.sumWithArguments(arithmetic1.a, arithmetic1.b);
         System.out.println("result with return + arguments = " + result2);
+        
+        // garbage collector... modo didáctico, en realidad se gestiona diferente
+        //arithmetic1 = null; // variable se destruye al terminar ese method
+        //System.gc(); // gc() garbage collector = no se utiliza en la real life
+    }
+    
+    public static void miMetodo() {
+        // la variable esta fuera del alcance donde fue definida
+        // a = 10;
+        System.out.println("otro method");
     }
 }
