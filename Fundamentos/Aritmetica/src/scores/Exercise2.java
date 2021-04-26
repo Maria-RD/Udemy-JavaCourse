@@ -1,4 +1,4 @@
-package operations;
+package scores;
 
 public class Exercise2 {
     /*
@@ -12,6 +12,16 @@ public class Exercise2 {
     // 1. declaring the attributes
     double firstScore, secondScore, examScore, finalScore;
     String veredict;
+    
+    // 1.1. creating default constructor
+    public Exercise2() {}
+    
+    // 1.2. creating overloaded constructor
+    public Exercise2(double firstScore, double secondScore, double examScore) {
+        this.firstScore = firstScore;
+        this.secondScore = secondScore;
+        this.examScore = examScore;
+    }
     
     // 2.1. creating the method - Signature
     // method to calculate the final score

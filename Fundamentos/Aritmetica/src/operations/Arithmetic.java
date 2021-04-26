@@ -7,6 +7,18 @@ public class Arithmetic {
     int a;
     int b;
     
+    // Creando manualmente constructor vacio (sin parámetros)
+    // el compilador lo crea automaticamente, pero tambien se puede manual
+    public Arithmetic() {
+        System.out.println("Ejecutando constructor");
+    }
+    
+    // SOBRECARGA CONSTRUCTORES - 2 o mas constructores
+    public Arithmetic(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+    
     // 2. creacion de metodos
     
     // 2.1 metodo sin retorno (void)
