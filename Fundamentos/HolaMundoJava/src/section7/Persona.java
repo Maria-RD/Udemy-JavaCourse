@@ -1,8 +1,8 @@
 package section7;
 
 public class Persona {
-    String name;
-    String firstSurname;
+    public String name;
+    public String firstSurname;
     
     // methods
     public void showInfo() {
