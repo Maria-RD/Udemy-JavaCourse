@@ -40,4 +40,10 @@ public class Persona {
     public void setDeleted(boolean deleted) {
         this.deleted = deleted;
     }
+    
+    // 4. creando metodo toString()
+    public String toString() {
+        return "Persona: [name: " + this.name + 
+                ", salary: "+ this.salary + ", deleted: " + this.deleted + "]";
+    }
 }

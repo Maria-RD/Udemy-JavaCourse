@@ -13,6 +13,10 @@ public class TestPersona {
         
         // 3. se imprime el nuevo name con el getter
         // System.out.println(persona1.name); - modificador acceso privado
-        System.out.println("persona1.getName() = " + persona1.getName());
+        // System.out.println("persona1.getName() = " + persona1.getName());
+        
+        // 3v2.0. se imprime todo el content de objeto persona1 con toString()
+        // System.out.println(persona1.toString());
+        System.out.println(persona1); // toString() es detectado por print/ln() 
     }
 }

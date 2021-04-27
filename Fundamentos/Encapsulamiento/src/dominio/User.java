@@ -40,4 +40,10 @@ public class User {
     public void setStatus(boolean status) {
         this.status = status;
     }
+    
+    // 4. defining toString() method
+    public String toString() {
+        return "User: [id: " + this.id + ", name: " + this.name +
+                ", status: " + this.status + "]";
+    }
 }
