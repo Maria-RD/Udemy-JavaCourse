@@ -64,7 +64,13 @@ public class Persona {
     // 4. defining toString() method
     @Override
     public String toString() {
-        return "Persona: {name:" + this.name + ", genre:" + this.genre +
-                ", age:" + this.age + ", address:" + this.address + "}";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona: {name:").append(this.name);
+        sb.append(", genre:").append(this.genre);
+        sb.append(", age:").append(this.age);
+        sb.append(", address:").append(this.address);
+        sb.append(", super.toString():").append(super.toString());
+        sb.append("}");
+        return sb.toString();
     }
 }

@@ -3,7 +3,7 @@ package domain;
 public class Employee extends Persona {
 
     // 1. defining private (bd there aren't more child classes) and a static counter attrib
-    private int idEmployee;
+    private int employeeId;
     private double salary;
     private static int employeeCounter;
 
@@ -12,7 +12,7 @@ public class Employee extends Persona {
     public Employee(String name, double salary) {
         super(name); // initializing parent constructor with 1 arg
         this.name = name;
-        this.idEmployee = ++Employee.employeeCounter;
+        this.employeeId = ++Employee.employeeCounter;
         this.salary = salary;
     }
 
@@ -20,7 +20,7 @@ public class Employee extends Persona {
     // 3.1. getter of idEmployee - setter is not necessary because it is already
     // initialized in the Employee() constructor
     public int getIdEmployee() {
-        return this.idEmployee;
+        return this.employeeId;
     }
 
     // 3.2 salary
@@ -37,11 +37,11 @@ public class Employee extends Persona {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Employee{idEmployee=").append(this.idEmployee);
+        sb.append("Employee{employeeId=").append(this.employeeId);
         sb.append(", name=").append(this.name);
         sb.append(", salary=").append(this.salary);
         sb.append("}\n");
-        sb.append(super.toString()); // toString() de Persona usando "super"
+        sb.append(super.toString()); // toString() of Persona using "super"
         return sb.toString();
     }
 }

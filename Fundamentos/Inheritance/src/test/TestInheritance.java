@@ -1,7 +1,7 @@
 package test;
 
-import domain.*;
-import java.util.Date;
+import domain.Employee;
+import domain.Customer;
 
 public class TestInheritance {
     public static void main(String[] args) {
