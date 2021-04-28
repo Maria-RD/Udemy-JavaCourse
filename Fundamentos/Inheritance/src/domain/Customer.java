@@ -11,7 +11,7 @@ public class Customer extends Persona {
     
     // 2. creating constructor with some default args
     public Customer(String name, boolean vipCustomer, char genre, int age, String address) {
-        super(name);
+        super(name, genre, age, address);
         Date date = new Date(); // creating object of type Date
         this.signUpDate = date; // setting this object to SignUpDate
         this.customerId = ++Customer.customerCounter;
