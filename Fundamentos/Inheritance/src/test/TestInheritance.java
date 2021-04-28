@@ -1,5 +1,6 @@
 package test;
 
+import domain.Persona;
 import domain.Employee;
 import domain.Customer;
 
@@ -23,6 +24,9 @@ public class TestInheritance {
         
         // 2.1. printing child class inherited from Persona
         System.out.println();
-        System.out.println(customer2); 
+        System.out.println(customer2);
+        
+        // 3. creating object of type Persona
+        Persona persona1 = new Persona();
     }
 }

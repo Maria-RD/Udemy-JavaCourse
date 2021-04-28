@@ -9,12 +9,20 @@ public class Customer extends Persona {
     private boolean vipCustomer;
     private static int customerCounter;
     
-    // 2. creating constructor with some default args
-    public Customer(String name, boolean vipCustomer, char genre, int age, String address) {
-        super(name, genre, age, address);
-        Date date = new Date(); // creating object of type Date
-        this.signUpDate = date; // setting this object to SignUpDate
+    // 2. overloaded constructors
+    // 2.1 creating empty constructor with preloaded values
+    public Customer() {
+        //super();
+        Date date = new Date();
+        this.signUpDate = date;
         this.customerId = ++Customer.customerCounter;
+    }
+    
+    // 2.2. creating constructor with full default args
+    public Customer(String name, boolean vipCustomer, char genre, int age, String address) {
+        //super(name, genre, age, address);
+        this(); // this(): constructor in the same class, super(): constructor parent class
+        this.name = name;
         this.vipCustomer = vipCustomer;
         this.genre = genre;
         this.age = age;
