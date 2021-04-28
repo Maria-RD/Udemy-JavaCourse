@@ -15,11 +15,11 @@ public class TestAcademicGrading {
         AcademicGrading finalScore1 = new AcademicGrading(4.5, 5.0, 5.0);
         
         // We need to print it out somewhere
-        System.out.println("Default values");
+        System.out.println("FIRST OBJECT - CONSTRUCTOR WITH ARGS");
         printToConsole(finalScore1); // same as printToConsole(finalScore1.toString())
         
         // Asking for some data
-        System.out.println("\nPASS OR FAILED");
+        System.out.println("PASS OR FAILED");
         System.out.print("Insert 1st score (35%): ");
         finalScore1.setFirstScore(Double.parseDouble(scanner.nextLine()));
         System.out.print("Insert 2nd score (35%): ");
@@ -41,7 +41,7 @@ public class TestAcademicGrading {
         AcademicGrading finalScore2 = new AcademicGrading();
         
         // printing default values to this object - given directly by the compiler
-        System.out.println();
+        System.out.println("\nSECOND OBJECT - CONSTRUCTOR WITHOUT ARGUMENTS");
         printToConsole(finalScore2);
         
         // asking for some info to the 2nd object
