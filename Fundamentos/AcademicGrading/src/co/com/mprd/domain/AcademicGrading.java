@@ -98,13 +98,15 @@ public class AcademicGrading {
         AcademicGrading.scoresCounter = scoresCounter;
     }
     
-    // 2.8 toString
-    // TESTING: CHANGING BRANCH
+    // 2.8 toString - using StringBuilder
     @Override
     public String toString() {
-        return "AcademicGrading: {idScore:" + this.idScore + ", firstScore:" + this.firstScore
-                + ", secondScore:" + this.secondScore + ", examScore:" + this.examScore
-                + ", finalScore:" + this.finalScore + ", veredict:" + this.veredict
-                + ", scoresCounter:" + AcademicGrading.scoresCounter + "}";
+        StringBuilder sb = new StringBuilder();
+        sb.append("AcademicGrading: {idScore=").append(this.idScore);
+        sb.append(", firstScore=").append(this.firstScore);
+        sb.append(", secondScore=").append(this.secondScore);
+        sb.append(", examScore=").append(this.examScore);
+        sb.append(", veredict=").append(this.veredict).append("}");
+        return sb.toString();
     }
 }
