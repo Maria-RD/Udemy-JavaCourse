@@ -1,4 +1,4 @@
-package domain;
+package co.com.mprd.domain;
 
 public class AcademicGrading {
     /*

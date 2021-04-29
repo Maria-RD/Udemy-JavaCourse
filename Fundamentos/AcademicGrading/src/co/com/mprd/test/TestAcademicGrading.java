@@ -1,6 +1,6 @@
-package test;
+package co.com.mprd.test;
 
-import domain.AcademicGrading;
+import co.com.mprd.domain.AcademicGrading;
 import java.util.Scanner;
 
 public class TestAcademicGrading {
