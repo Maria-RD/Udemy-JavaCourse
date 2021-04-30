@@ -17,8 +17,7 @@ public class TestAcademicGrading {
         System.out.print("Quantity of students: ");
         int numStudents = Integer.parseInt(scanner.nextLine());
         // Now here we create the array object of type AcademicGrading
-        AcademicGrading scores[] = new AcademicGrading[numStudents]; // 2 students, 3 scores
-
+        AcademicGrading scores[] = new AcademicGrading[numStudents]; // n quantity of students
         System.out.println();
         
         // Asking for the scores in a loop

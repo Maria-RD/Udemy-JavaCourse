@@ -32,13 +32,9 @@ public class AcademicGrading {
     }
     
     // 2. creating getters and setters
-    // 2.1. idScore
+    // 2.1. idScore - just the getter, setter is already defined
     public int getIdScore() {
         return this.idScore;
-    }
-    
-    public void setIdScore(int idScore) {
-        this.idScore = idScore;
     }
     
     // 2.2. firstScore
