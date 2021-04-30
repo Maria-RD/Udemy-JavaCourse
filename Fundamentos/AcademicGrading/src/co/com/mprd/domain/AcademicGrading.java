@@ -85,14 +85,7 @@ public class AcademicGrading {
         return this.veredict = this.finalScore >= 3.0;
     }
     
-    // 2.7. scoresCounter
-    public int getScoresCounter() {
-        return AcademicGrading.scoresCounter;
-    }
-    
-    public void setScoresCounter(int scoresCounter){
-        AcademicGrading.scoresCounter = scoresCounter;
-    }
+    // 2.7. scoresCounter - getters and setters for static vars are not necessary
     
     // 2.8 toString - using StringBuilder
     @Override
