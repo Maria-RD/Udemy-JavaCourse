@@ -17,18 +17,18 @@ public class AcademicGrading {
     
     // 1.1. creating default constructor
     public AcademicGrading() {
+        super(); // not necesary but important to remember
         this.idScore = ++AcademicGrading.scoresCounter;
     }
     
     // 1.2. creating overloaded constructor
     public AcademicGrading(double firstScore, double secondScore, double examScore) {
-        super(); // not necesary but important to remember
+        this(); // pointing to the default constructor
         this.firstScore = firstScore;
         this.secondScore = secondScore;
         this.examScore = examScore;
         this.finalScore = setFinalScore();
         this.veredict = setVeredict();
-        this.idScore = ++AcademicGrading.scoresCounter;
     }
     
     // 2. creating getters and setters
@@ -106,6 +106,7 @@ public class AcademicGrading {
         sb.append(", firstScore=").append(this.firstScore);
         sb.append(", secondScore=").append(this.secondScore);
         sb.append(", examScore=").append(this.examScore);
+        sb.append(", finalScore=").append(this.finalScore);
         sb.append(", veredict=").append(this.veredict).append("}");
         return sb.toString();
     }
