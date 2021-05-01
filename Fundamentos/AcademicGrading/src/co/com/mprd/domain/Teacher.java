@@ -5,13 +5,17 @@ public class Teacher extends Persona {
     private int teacherId;
     private char type;
     private AcademicGrading scores;
-    private Student students;
+    private Student students[];
+    private int studentsCounter;
     private static int teacherCounter;
+    private final static int MAX_STUDENTS = 5;
     
     // 2. creating constructors
     // 2.1. default constructor
+    // this also MUST initialize the array
     public Teacher() {
         this.teacherId = ++Teacher.teacherCounter;
+        this.students = new Student[Teacher.MAX_STUDENTS];
     }
     
     // 2.2. overloaded constructor (for testing purposes)
@@ -44,12 +48,20 @@ public class Teacher extends Persona {
     }
     
     // 3.4. students
-    public Student getStudents() {
+    public Object getStudents() {
         return this.students;
     }
     
-    public void setStudents(Student students) {
-        this.students = students;
+    //public void setStudents(Student students[]) {
+    //    this.students = students;
+    //}
+    
+    public void addStudents(Student students) {
+        if (this.studentsCounter <= Teacher.MAX_STUDENTS) {
+            this.students[studentsCounter++] = students;
+        } else {
+            
+        }
     }
     
     // 4. toString() method

@@ -45,9 +45,9 @@ public class TestStudentTeacher {
         System.out.println(teacher2);
         
         // 3. assigning teachers to student
-        teacher1.setStudents(student1); // Teacher Thomas: Andrew
-        teacher1.setStudents(student2); // Teacher Thomas: Ana
-        teacher2.setStudents(student3); // Teacher Ann: Clarine
+        teacher1.addStudents(student1); // Teacher Thomas: Andrew
+        teacher1.addStudents(student2); // Teacher Thomas: Ana
+        teacher2.addStudents(student3); // Teacher Ann: Clarine
         
         // 4. printing again
         // 4.1. printing teachers

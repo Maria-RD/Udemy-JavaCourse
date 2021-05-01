@@ -3,7 +3,7 @@ package co.com.mprd.domain;
 public class Student extends Persona {
 
     // 1. defining attribs: private and static attribs
-    private int studentId;
+    private final int studentId;
     private AcademicGrading score;
     private Teacher teacher;
     private static int studentCounter;
