@@ -18,7 +18,7 @@ public class Order {
     // 3. methods - getters and setters are not here
     public void addProduct(Product products) {
         // Validate quantity of products
-        if (this.productsCounter <= Order.MAX_PRODUCTS){
+        if (this.productsCounter < Order.MAX_PRODUCTS){
             this.products[this.productsCounter++] = products;
         } else {
             System.out.println("The number of products is exceeded: " + Order.MAX_PRODUCTS);

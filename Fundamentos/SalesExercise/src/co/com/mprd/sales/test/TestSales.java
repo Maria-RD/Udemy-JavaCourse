@@ -33,13 +33,29 @@ public class TestSales {
         System.out.println(product10);
         System.out.println(product11);
         System.out.println(product12);
-        
+
         // Creating an order
         System.out.println("");
         Order order1 = new Order();
         order1.addProduct(product1);
         order1.addProduct(product8);
         order1.showOrder();
+
+        // Creating an order
+        System.out.println("");
+        Order order2 = new Order();
+        order2.addProduct(product1);
+        order2.addProduct(product2);
+        order2.addProduct(product3);
+        order2.addProduct(product4);
+        order2.addProduct(product5);
+        order2.addProduct(product6);
+        order2.addProduct(product7);
+        order2.addProduct(product8);
+        order2.addProduct(product9);
+        order2.addProduct(product10);
+        order2.addProduct(product11); // this line goes to the else statement
+        order2.showOrder();
 
     }
 }
