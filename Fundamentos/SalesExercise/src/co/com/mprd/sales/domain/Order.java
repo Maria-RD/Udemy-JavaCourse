@@ -19,17 +19,29 @@ public class Order {
     public void addProduct(Product products) {
         // Validate quantity of products
         if (this.productsCounter <= Order.MAX_PRODUCTS){
-            this.products[productsCounter++] = products;
+            this.products[this.productsCounter++] = products;
         } else {
             System.out.println("The number of products is exceeded: " + Order.MAX_PRODUCTS);
         }
     }
     
     public double calculateTotal() {
-        return 0.0; // Pending
+        double total = 0.0;
+        for (int i=0; i<this.productsCounter; i++) {
+            //Product product = this.products[i];
+            // total += product.getPrice();
+            total += this.products[i].getPrice();
+        }
+        return total;
     }
     
     public void showOrder() {
-        // Pending
+        System.out.println("WELCOME TO PEAR STORE!\nDear customer. This is your order.\n\n" +
+                "Order ID:" + this.orderId +
+                "\nTotal of the order=" + this.calculateTotal() 
+                + "\nChosen products:");
+        for (int i = 0; i < this.productsCounter; i++) {
+            System.out.println(this.products[i]);
+        }
     }
 }

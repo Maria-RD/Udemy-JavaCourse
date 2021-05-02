@@ -33,6 +33,13 @@ public class TestSales {
         System.out.println(product10);
         System.out.println(product11);
         System.out.println(product12);
+        
+        // Creating an order
+        System.out.println("");
+        Order order1 = new Order();
+        order1.addProduct(product1);
+        order1.addProduct(product8);
+        order1.showOrder();
 
     }
 }
