@@ -57,7 +57,7 @@ public class Teacher extends Persona {
     //}
     
     public void addStudents(Student students) {
-        if (this.studentsCounter <= Teacher.MAX_STUDENTS) {
+        if (this.studentsCounter < Teacher.MAX_STUDENTS) {
             this.students[studentsCounter++] = students;
         } else {
             
@@ -71,7 +71,12 @@ public class Teacher extends Persona {
         sb.append("Teacher: {teacherId=").append(this.teacherId);
         sb.append(", type=").append(this.type);
         sb.append(", scores=").append(this.scores);
-        sb.append(", students=").append(this.students).append("}");
+        sb.append(", students=");
+        // An iteration is necessary to show the full array
+        for (int i=0; i<this.studentsCounter; i++){
+            sb.append(this.students[i]).append("\n");
+        }
+        sb.append("}");
         sb.append(" ").append(super.toString());
         return sb.toString();
     }
