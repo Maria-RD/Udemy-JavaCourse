@@ -1,12 +1,11 @@
 package co.com.mprd.domain;
 
-import co.com.mprd.domain.Student;
-
+    
 public class Teacher extends Persona {
     // 1. attributes: private and static attribs
     private int teacherId;
     private char type;
-    private AcademicGrading scores;
+    //private AcademicGrading scoreStudent;
     private Student students[];
     private int studentsCounter;
     private static int teacherCounter;
@@ -40,15 +39,6 @@ public class Teacher extends Persona {
         this.type = type;
     }
     
-    // 3.3. scores
-    public AcademicGrading getScores() {
-        return this.scores;
-    }
-    
-    public void setScores(AcademicGrading scores) {
-        this.scores = scores;
-    }
-    
     // 3.4. students
     public Object getStudents() {
         return this.students;
@@ -66,13 +56,18 @@ public class Teacher extends Persona {
         }
     }
     
+//    public void setScoreStudent(Student student, AcademicGrading scoreStudent) {
+//        //this.students[1] = students;
+//        this.scoreStudent = scoreStudent;
+//    }
+    
     // 4. toString() method
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Teacher: {teacherId=").append(this.teacherId);
         sb.append(", type=").append(this.type);
-        //sb.append(", scores=").append(this.scores);
+        //sb.append(", scoreStudent=").append(this.scoreStudent);
         sb.append(", students=");
         // An iteration is necessary to show the full array
         for (int i=0; i<this.studentsCounter; i++){

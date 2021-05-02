@@ -13,13 +13,14 @@ public class TestStudentTeacher {
         student1.setName("Andrew");
         student1.setFirstSurname("Smith");
         student1.setGender('m');
+        student1.setScore(new AcademicGrading(4.5, 4.8, 4.3));
         System.out.println(student1);
         
         // 1.2. student 2
-        Student student2 = new Student();
-        student2.setName("Ana");
-        student2.setFirstSurname("Smith");
-        student2.setGender('f');
+        Student student2 = new Student("Ana", "Smith", 'f');
+        //student2.setName("Ana");
+        //student2.setFirstSurname("Smith");
+        //student2.setGender('f');
         System.out.println(student2);
         
         // 1.2. student 3
@@ -53,8 +54,8 @@ public class TestStudentTeacher {
         // 4. assigning student to a teacher - this shouldnt be in this way
         // student1.setTeacher(teacher1); // Student Andrew: Thomas
         
-        // 4. setting scores
-        teacher1.setScores(new AcademicGrading(student1, 4.0));
+        // 4. setting score to a student
+        //AcademicGrading score2 = new AcademicGrading(student2, 4.3);
         
         // 4. printing again
         // 4.1. printing teachers
