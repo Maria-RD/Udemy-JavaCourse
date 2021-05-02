@@ -25,11 +25,11 @@ public class TestAcademicGrading {
             System.out.println("STUDENT #" + (i+1) + ": ");
             scores[i] = new AcademicGrading();
             System.out.print("Insert 1st score (35%): ");
-            scores[i].setFirstScore(Double.parseDouble(scanner.nextLine()));
+            //scores[i].setFirstScore(Double.parseDouble(scanner.nextLine()));
             System.out.print("Insert 2nd score (35%): ");
-            scores[i].setSecondScore(Double.parseDouble(scanner.nextLine()));
+            //scores[i].setSecondScore(Double.parseDouble(scanner.nextLine()));
             System.out.print("Insert exam score (30%): ");
-            scores[i].setExamScore(Double.parseDouble(scanner.nextLine()));
+            //scores[i].setExamScore(Double.parseDouble(scanner.nextLine()));
             
             //setting new values
             scores[i].setFinalScore();

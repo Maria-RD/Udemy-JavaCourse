@@ -21,13 +21,19 @@ public class Student extends Persona {
     }
     
     // 3.2. scores
-    public AcademicGrading getScores() {
+    public AcademicGrading getScore() {
         return this.score;
     }
     
-    public Teacher getTeacher() {
-        return this.teacher;
-    }
+    // 3.3. teacher
+    
+    //public Teacher getTeacher() {
+    //    return this.teacher;
+    //}
+    
+    //public void setTeacher(Teacher teacher) {
+    //    this.teacher = teacher;
+    //}
     
     // 4. toString() method
     @Override
@@ -35,7 +41,8 @@ public class Student extends Persona {
         StringBuilder sb = new StringBuilder();
         sb.append("Student: {studentId=").append(this.studentId);
         sb.append(", score=").append(this.score);
-        sb.append(", teacher=").append(this.teacher).append("}");
+        //sb.append(", teacher=").append(this.teacher);
+        sb.append("}");
         sb.append(" ").append(super.toString());
         return sb.toString();
     }

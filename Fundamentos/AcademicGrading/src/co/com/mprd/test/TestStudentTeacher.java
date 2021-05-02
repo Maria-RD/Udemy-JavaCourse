@@ -2,6 +2,7 @@ package co.com.mprd.test;
 
 import co.com.mprd.domain.Teacher;
 import co.com.mprd.domain.Student;
+import co.com.mprd.domain.AcademicGrading;
 
 public class TestStudentTeacher {
     public static void main(String[] args) {
@@ -48,6 +49,12 @@ public class TestStudentTeacher {
         teacher1.addStudents(student1); // Teacher Thomas: Andrew
         teacher1.addStudents(student2); // Teacher Thomas: Ana
         teacher2.addStudents(student3); // Teacher Ann: Clarine
+        
+        // 4. assigning student to a teacher - this shouldnt be in this way
+        // student1.setTeacher(teacher1); // Student Andrew: Thomas
+        
+        // 4. setting scores
+        teacher1.setScores(new AcademicGrading(student1, 4.0));
         
         // 4. printing again
         // 4.1. printing teachers
