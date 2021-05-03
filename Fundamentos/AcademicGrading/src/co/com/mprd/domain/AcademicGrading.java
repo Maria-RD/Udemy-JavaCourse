@@ -31,8 +31,8 @@ public class AcademicGrading {
         this.firstScore = firstScore;
         this.secondScore = secondScore;
         this.examScore = examScore;
-        this.finalScore = setFinalScore();
-        this.veredict = setVeredict();
+        this.finalScore = this.setFinalScore();
+        this.veredict = this.setVeredict();
     }
     
 //    public AcademicGrading(double score) {
