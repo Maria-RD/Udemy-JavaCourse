@@ -4,14 +4,18 @@ public class Teacher extends Persona {
     // 1. attributes: private and static attribs
     private int teacherId;
     private char type;
-    private AcademicGrading scores;
-    private Student students;
+    //private AcademicGrading scoreStudent;
+    private Student students[];
+    private int studentsCounter;
     private static int teacherCounter;
+    public final static int MAX_STUDENTS = 5;
     
     // 2. creating constructors
     // 2.1. default constructor
+    // this also MUST initialize the array
     public Teacher() {
         this.teacherId = ++Teacher.teacherCounter;
+        this.students = new Student[Teacher.MAX_STUDENTS];
     }
     
     // 2.2. overloaded constructor (for testing purposes)
@@ -34,23 +38,27 @@ public class Teacher extends Persona {
         this.type = type;
     }
     
-    // 3.3. scores
-    public AcademicGrading getScores() {
-        return this.scores;
-    }
-    
-    public void setScores(AcademicGrading scores) {
-        this.scores = scores;
-    }
-    
     // 3.4. students
-    public Student getStudents() {
+    public Object getStudents() {
         return this.students;
     }
     
-    public void setStudents(Student students) {
-        this.students = students;
+    //public void setStudents(Student students[]) {
+    //    this.students = students;
+    //}
+    
+    public void addStudents(Student students) {
+        if (this.studentsCounter < Teacher.MAX_STUDENTS) {
+            this.students[studentsCounter++] = students;
+        } else {
+            System.out.println("");
+        }
     }
+    
+//    public void setScoreStudent(Student student, AcademicGrading scoreStudent) {
+//        //this.students[1] = students;
+//        this.scoreStudent = scoreStudent;
+//    }
     
     // 4. toString() method
     @Override
@@ -58,8 +66,12 @@ public class Teacher extends Persona {
         StringBuilder sb = new StringBuilder();
         sb.append("Teacher: {teacherId=").append(this.teacherId);
         sb.append(", type=").append(this.type);
-        sb.append(", scores=").append(this.scores);
-        sb.append(", students=").append(this.students).append("}");
+        //sb.append(", scoreStudent=").append(this.scoreStudent);
+        // An iteration is necessary to show the full array
+        for (int i=0; i<this.studentsCounter; i++){
+            sb.append(this.students[i]).append("\n");
+        }
+        sb.append("}");
         sb.append(" ").append(super.toString());
         return sb.toString();
     }

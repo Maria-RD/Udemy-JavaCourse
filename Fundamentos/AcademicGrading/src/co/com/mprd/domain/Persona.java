@@ -15,13 +15,13 @@ public class Persona {
     }
     
     // 1.2. overloaded constructor (for testing purposes)
-    public Persona(String name, String firstSurname, Date birthDate, char gender) {
-        this(); // calling the default constructor
-        this.name = name;
-        this.firstSurname = firstSurname;
-        this.birthDate = birthDate;
-        this.gender = gender;
-    }
+//    public Persona(String name, String firstSurname, Date birthDate, char gender) {
+//        this(); // calling the default constructor
+//        this.name = name;
+//        this.firstSurname = firstSurname;
+//        this.birthDate = birthDate;
+//        this.gender = gender;
+//    }
     
     // 2. getters and setters
     // 2.1. name
