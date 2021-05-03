@@ -5,7 +5,11 @@ public class Teacher extends Persona {
     // 1. attributes: private and static attribs
     private int teacherId;
     private char type;
+<<<<<<< HEAD
     //private AcademicGrading scoreStudent;
+=======
+    private AcademicGrading scoreStudent;
+>>>>>>> 3f8455dc2324a231a83df6533c107549adf288b2
     private Student students[];
     private int studentsCounter;
     private static int teacherCounter;
@@ -56,10 +60,17 @@ public class Teacher extends Persona {
         }
     }
     
+<<<<<<< HEAD
 //    public void setScoreStudent(Student student, AcademicGrading scoreStudent) {
 //        //this.students[1] = students;
 //        this.scoreStudent = scoreStudent;
 //    }
+=======
+    public void setScoreStudent(Student student, AcademicGrading scoreStudent) {
+        //this.students[1] = students;
+        this.scoreStudent = scoreStudent;
+    }
+>>>>>>> 3f8455dc2324a231a83df6533c107549adf288b2
     
     // 4. toString() method
     @Override
@@ -67,7 +78,11 @@ public class Teacher extends Persona {
         StringBuilder sb = new StringBuilder();
         sb.append("Teacher: {teacherId=").append(this.teacherId);
         sb.append(", type=").append(this.type);
+<<<<<<< HEAD
         //sb.append(", scoreStudent=").append(this.scoreStudent);
+=======
+        sb.append(", scoreStudent=").append(this.scoreStudent);
+>>>>>>> 3f8455dc2324a231a83df6533c107549adf288b2
         sb.append(", students=");
         // An iteration is necessary to show the full array
         for (int i=0; i<this.studentsCounter; i++){

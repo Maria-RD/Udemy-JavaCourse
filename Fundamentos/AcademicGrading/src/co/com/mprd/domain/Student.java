@@ -35,11 +35,19 @@ public class Student extends Persona {
     public AcademicGrading getScore() {
         return this.score;
     }
+<<<<<<< HEAD
 
     public void setScore(AcademicGrading score) {
         this.score = score;
     }
 
+=======
+    
+    public void setScore(AcademicGrading score) {
+        this.score = score;
+    }
+    
+>>>>>>> 3f8455dc2324a231a83df6533c107549adf288b2
     // 3.3. teacher
     //public Teacher getTeacher() {
     //    return this.teacher;
